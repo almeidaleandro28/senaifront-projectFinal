@@ -18,6 +18,8 @@ function generateCard() {
     card.querySelector(".card-content > h2").innerHTML = x.name;
     document.querySelector(".section").append(card);
   }
+  //remove origin card-product
+  const card = document.querySelector(".card").remove();
 }
 
 const bt_add = document.getElementById("bt-sum");
