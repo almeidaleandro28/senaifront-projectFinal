@@ -6,17 +6,18 @@ function getProducts() {
   request.onload = function() {
     products = JSON.parse(this.responseText);
     console.log( products)
+    generateCard();
   }
   request.send();
+  
 }
 
 function generateCard() {
-  const card = document.querySelector(".card").cloneNode(true);
-  card.querySelector(".card-content > h2").innerHTML = "odlsldldld";
-  document.querySelector(".section").append(card);
-
-
-
+  for( const x of products ) {
+    const card = document.querySelector(".card").cloneNode(true);
+    card.querySelector(".card-content > h2").innerHTML = x.name;
+    document.querySelector(".section").append(card);
+  }
 }
 
 const bt_add = document.getElementById("bt-sum");
@@ -37,4 +38,5 @@ function updateAmount( counter ) {
   document.getElementById("price").value = counter;
 }
 
-generateCard();
+getProducts();
+
