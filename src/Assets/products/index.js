@@ -17,6 +17,7 @@ function generateCard() {
     const card = document.querySelector(".card").cloneNode(true);
     card.querySelector(".card-content > h2").innerHTML = x.name;
     card.querySelector(".image > img").src = `./src/Assets/images/${x.img}`;
+    card.querySelector(".card-content #price").innerHTML = x.price;
     document.querySelector(".section").append(card);
   }
   //remove origin card-product
