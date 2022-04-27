@@ -16,6 +16,7 @@ function generateCard() {
   for( const x of products ) {
     const card = document.querySelector(".card").cloneNode(true);
     card.querySelector(".card-content > h2").innerHTML = x.name;
+    card.querySelector(".image > img").src = `./src/Assets/images/${x.img}`;
     document.querySelector(".section").append(card);
   }
   //remove origin card-product
@@ -41,4 +42,3 @@ function updateAmount( counter ) {
 }
 
 getProducts();
-
