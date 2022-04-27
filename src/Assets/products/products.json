@@ -1,0 +1,54 @@
+[
+  { 
+  "name": "chocolate em barra",
+  "price": 5.40,
+  "amount": 3,
+  "img": "chocolate-640-426.jpg"
+  },
+  { 
+    "name": "chocolate em barra",
+    "price": 5.40,
+    "amount": 3,
+    "img": "chocolate-640-426.jpg"
+  },
+  { 
+      "name": "chocolate em barra",
+      "price": 5.40,
+      "amount": 3,
+      "img": "chocolate-640-426.jpg"
+  },
+  { 
+        "name": "chocolate em barra",
+        "price": 5.40,
+        "amount": 3,
+        "img": "chocolate-640-426.jpg"
+  },
+  { 
+          "name": "chocolate em barra",
+          "price": 5.40,
+          "amount": 3,
+          "img": "chocolate-640-426.jpg"
+  },
+  { 
+            "name": "chocolate em barra",
+            "price": 5.40,
+            "amount": 3,
+            "img": "chocolate-640-426.jpg"
+  },
+  { 
+              "name": "chocolate em barra",
+              "price": 5.40,
+              "amount": 3,
+              "img": "chocolate-640-426.jpg"
+  },
+  { 
+                "name": "chocolate em barra",
+                "price": 5.40,
+                "amount": 3,
+                "img": "chocolate-640-426.jpg"
+  }
+
+
+
+
+]
