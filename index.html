@@ -10,7 +10,8 @@
   <title>docerinha</title>
 </head>
 <body>
-  <section class="section">
+  <section class="section" id="products">
+
     <div class="card">
       <div class="card-image">
         <figure class="image is-4by3 img-width">
@@ -21,17 +22,23 @@
         <h2>product</h2>
       </div>
       <div class="card-footer is-justify-content-center">
+
         <div class="buttons">
-          <button class="button">+</button>
+
+          <button class="button" id="bt-sum" onclick="add()">+</button>
           <div class="field">
             <div class="control">
-              <input class="input" type="text" placeholder="Text input" readonly>
+              <input class="input" id="price" type="text" placeholder="Text input" readonly>
             </div>
           </div>
-          <button class="button">-</button>
-        </div>       
-      </div>
-    </div>
-  </section>
+          <button class="button" id="bt-sub" onclick="sub()">-</button>
+
+        </div> <!-- end buttons -->   
+
+      </div><!-- end card-footer -->
+    </div><!-- end card -->
+
+  </section><!-- end section products -->
+<script src="./src/Middleware/index.js"></script>
 </body>
 </html>
