@@ -46,9 +46,9 @@
 
   </section><!-- end section products -->
 
-  <section class="section section-request has-text-centered">
+  <section class="section section-request has-text-centered"">
     <h2 class="">Pedidos</h2>
-    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+    <button type="button" onclick="showProducts()" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
       Open Modal
     </button>
 
@@ -66,12 +66,12 @@
         <h4 class="modal-title">Modal Header</h4>
       </div>
       <div class="modal-body">
-        <p>nenhum produto selecionado!</p>
+       
       </div>
       <div class="modal-footer">
         <input type="text" name="" id="name" class="form-control" placeholder="Nome">
         <input type="text" name="" id="address" class="form-control" placeholder="Endereço">
-        <button type="button" class="btn btn-default" id="btn_send" onclick="showProducts()">enviar</button>
+        <button type="button" class="btn btn-default" id="btn_send" disabled>enviar</button>
       </div>
     </div>
 

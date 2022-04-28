@@ -66,14 +66,14 @@ function showProducts() {
     } 
   }
 
-//   if (msgModal == "") {
-//     msgModal = "<p>Nenhum produto selecionado.</p>";
-//     document.querySelector("#btn_send").disabled = "disabled";
-// } else {
-//     msgModal += `<b>Total ${total.toFixed(2)}</b>`
-//     document.querySelector("#btn_sendr").disabled = "";
-// }
-// console.log( msgModal)
+  if (msgModal == "") { 
+    msgModal = "<p>Nenhum produto selecionado.</p>";
+    document.querySelector("#btn_send").disabled = "disabled";
+  } else {
+    msgModal += `<p>Total ${total.toFixed(2)}</p>`
+    document.querySelector("#btn_send").disabled = "";
+  }
+
  document.querySelector(".modal-body").innerHTML = msgModal;
 
 }
