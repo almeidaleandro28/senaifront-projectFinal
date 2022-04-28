@@ -8,7 +8,6 @@ function getProducts() {
     generateCard();
   }
   request.send();
-  
 }
 
 function generateCard() {
@@ -51,8 +50,32 @@ function changeAmount(idProduct, amount) {
   
 }
 
+function sendRequest() {
 
+}
+let msgModal = "";
+function showProducts() {
+  msgModal = "";
+  let total = 0;
+  let subTotal = 0;
+  for ( product of products ) {
+    if ( product.amount > 0 ) {
+            subTotal = ( product.price * product.amount ).toFixed(2);
+            total += +subTotal;
+            msgModal += `<p>${product.name.toUpperCase()} (R$ ${product.price} x ${product.amount}) = ${subTotal}</p>`;
+    } 
+  }
 
+//   if (msgModal == "") {
+//     msgModal = "<p>Nenhum produto selecionado.</p>";
+//     document.querySelector("#btn_send").disabled = "disabled";
+// } else {
+//     msgModal += `<b>Total ${total.toFixed(2)}</b>`
+//     document.querySelector("#btn_sendr").disabled = "";
+// }
+// console.log( msgModal)
+ document.querySelector(".modal-body").innerHTML = msgModal;
 
+}
 
 getProducts();

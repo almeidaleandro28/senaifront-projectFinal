@@ -55,7 +55,6 @@
   </section>
   
 <script src="./src/Assets/products/index.js"></script>
-<script src="./src/Assets/products/modal.js"></script>
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -67,10 +66,12 @@
         <h4 class="modal-title">Modal Header</h4>
       </div>
       <div class="modal-body">
-        <p>Some text in the modal.</p>
+        <p>nenhum produto selecionado!</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <input type="text" name="" id="name" class="form-control" placeholder="Nome">
+        <input type="text" name="" id="address" class="form-control" placeholder="Endereço">
+        <button type="button" class="btn btn-default" id="btn_send" onclick="showProducts()">enviar</button>
       </div>
     </div>
 
