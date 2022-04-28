@@ -53,6 +53,7 @@ function changeAmount(idProduct, amount) {
 function sendRequest() {
 
 }
+
 let msgModal = "";
 function showProducts() {
   msgModal = "";
@@ -76,6 +77,24 @@ function showProducts() {
 
  document.querySelector(".modal-body").innerHTML = msgModal;
 
+}
+
+
+function sendRequest() {
+  const phone = "55061981749346";
+
+  msgModal = msgModal.replaceAll("<p>", "").replaceAll("</p>", "\n");
+  msgModal = msgModal.replaceAll("<b>", "*").replaceAll("</b>", "*");
+
+  const nameClient = document.querySelector("#name").value;
+  const addressClient = document.querySelector("#address").value;
+
+  msgModal += `\nNome: *${nameClient}*`;
+  msgModal += `\nEnderço: *${addressClient}*`;
+  msgModal = encodeURI(msgModal);
+
+  link = `https://api.whatsapp.com/send?phone=${phone}&text=${msgModal}`;
+  window.open( link, "_blank");
 }
 
 getProducts();

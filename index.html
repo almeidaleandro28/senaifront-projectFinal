@@ -46,10 +46,10 @@
 
   </section><!-- end section products -->
 
-  <section class="section section-request has-text-centered"">
-    <h2 class="">Pedidos</h2>
+  <section class="section section-request has-text-centered" id="product-request">
+    <h2 class="">Faça seu pedido</h2>
     <button type="button" onclick="showProducts()" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
-      Open Modal
+      Pedido
     </button>
 
   </section>
@@ -71,12 +71,11 @@
       <div class="modal-footer">
         <input type="text" name="" id="name" class="form-control" placeholder="Nome">
         <input type="text" name="" id="address" class="form-control" placeholder="Endereço">
-        <button type="button" class="btn btn-default" id="btn_send" disabled>enviar</button>
+        <button type="button" class="btn btn-default" id="btn_send" onclick="sendRequest()" disabled>enviar</button>
       </div>
     </div>
 
   </div>
 </div>
 </body>
-<!-- Modal -->
 </html>
