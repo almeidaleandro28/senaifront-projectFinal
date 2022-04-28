@@ -44,7 +44,7 @@ function changeAmount(idProduct, amount) {
   let listProduct = products[ idProduct ];
   listProduct.amount += amount;
   //quantity does not go below zero
-
+  if ( listProduct.amount < 0 ) listProduct.amount = 0;
 
   document.getElementsByClassName("p_amount")[idProduct].value = listProduct.amount;
   
