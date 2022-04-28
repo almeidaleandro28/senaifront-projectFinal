@@ -32,7 +32,7 @@ function generateCard() {
     });
    
     
-    document.querySelector(".section").append(card);
+    document.querySelector(".section-product").append(card);
     
     counter++;
   }

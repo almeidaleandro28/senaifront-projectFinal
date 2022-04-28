@@ -6,23 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="./src/Assets/Styles/css/style.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <title>docerinha</title>
 </head>
 <body>
-  <section class="section" id="products">
-
-    <div class="card">
-      <div class="card-image">
+  <section class="section section-product has-background-primary" id="products">
+    
+      <div class="card">
+        <div class="card-image">
         <figure class="image is-4by3 img-width">
           <img src="./src/Assets/images/chocolate-640-426.jpg" alt="barra chocolate">
         </figure>
-      </div><!-- end card-image -->
-      <div class="card-content">
+        </div><!-- end card-image -->
+        <div class="card-content">
         <h2>product</h2>
         <p id="price"></p>
-      </div><!-- card-content -->
-      <div class="card-footer is-justify-content-center">
+        </div><!-- card-content -->
+        <div class="card-footer is-justify-content-center">
 
         <div class="buttons">
 
@@ -36,10 +40,42 @@
 
         </div> <!-- end buttons -->   
 
-      </div><!-- end card-footer -->
-    </div><!-- end card -->
+        </div><!-- end card-footer -->
+      </div><!-- end card -->
+    
 
   </section><!-- end section products -->
+
+  <section class="section section-request has-text-centered">
+    <h2 class="">Pedidos</h2>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+      Open Modal
+    </button>
+
+  </section>
+  
 <script src="./src/Assets/products/index.js"></script>
+<script src="./src/Assets/products/modal.js"></script>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 </body>
+<!-- Modal -->
 </html>
